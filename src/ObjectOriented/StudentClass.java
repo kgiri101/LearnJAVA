@@ -29,6 +29,10 @@ class Student{
 		
 	}
 	
+	public String toString() {
+		return "Roll no: " + roll + "\n" + "Name: " + name + "\n"+ "course: " + course + "\n";
+	}
+	
 }
 
 public class StudentClass {
@@ -53,6 +57,9 @@ public class StudentClass {
 		System.out.println("The total obtained mark is "+ kamal.total());
 		System.out.println("The average mark is "+ kamal.average());
 		System.out.println("The Grade is "+ kamal.grade());
+		
+		//We are calling the reference to the object so it will print the pbject details.
+		System.out.println("Details: \n" + kamal);
 		
 
 	}
