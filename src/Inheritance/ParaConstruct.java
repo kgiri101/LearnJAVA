@@ -23,9 +23,18 @@ class Child2 extends Parent2
 		
 	}
 	
-	public Child2(int x)
+	public Child2(int y)
 	{
 		System.out.println("Para Const of Child");
+	}
+	
+	//Using super constructor
+	
+	public Child2(int x, int y)
+	{
+		//this super will be used to called the constructor in parent class having one argument as a paramenter
+		super(x);
+		System.out.println(" Super Constructor" + x +y);
 	}
 }
 
@@ -51,6 +60,12 @@ public class ParaConstruct {
 		System.out.println("Para Child: ");
 		
 		Child2 c = new Child2(5);
+		
+		System.out.println("Using super");
+		
+		Child2 cs = new Child2(5,10);
+		
+		
 		
 	}
 }
